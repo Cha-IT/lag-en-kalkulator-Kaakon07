@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-
-    <label for="tall1">Tall 1:</label>
-    <input type="number" name="tall1" id="tall1">
-    <br>
-    <label for="tall2">Tall 2:</label>
-    <input type="number" name="tall2" id="tall2">
-    <br>
-    <input type="button" value="+" id="pluss">
-    <div id="svar"></div>
-
+    <div id="buttons">
+        <div id="rowOne">
+            <button onclick="getNumButton(this)">1</button>
+            <button onclick="getNumButton(this)">2</button>
+            <button onclick="getNumButton(this)">3</button>
+        </div>
+        <div id="rowTwo">
+            <button onclick="getNumButton(this)">4</button>
+            <button onclick="getNumButton(this)">5</button>
+            <button onclick="getNumButton(this)">6</button>
+        </div>
+        <div id="rowThree">
+            <button onclick="getNumButton(this)">7</button>
+            <button onclick="getNumButton(this)">8</button>
+            <button onclick="getNumButton(this)">9</button>
+        </div>
+        <div id="operators">
+            <button onclick="getOperator(this)">+</button>
+            <button onclick="getOperator(this)">-</button>
+            <button onclick="getOperator(this)">*</button>
+            <button onclick="getOperator(this)">/</button>
+            <button onclick="clearOutput()">c</button>
+        </div>
+    </div>
     
+    <div id="returnedNum">0</div>
 
-
-    <script src="app.js"></script>
+    <script src="logic.js"></script>
 </body>
 </html>
